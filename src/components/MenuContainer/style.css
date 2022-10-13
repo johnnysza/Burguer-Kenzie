@@ -1,0 +1,30 @@
+.ul {
+    display: flex;
+    overflow-y: scroll;
+    width: 375px;
+    margin-left: -20px;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .ul {
+        width: 700px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1000px;
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 1025px) {
+    .ul {
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        overflow-y: hidden;        
+    }
+}
